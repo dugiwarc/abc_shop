@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Product from './Product';
-import Title from './Title';
 import styled from 'styled-components';
 
 // import {storeProducts} from '../data';
@@ -15,8 +14,8 @@ export default class ProductList extends Component {
 
         return (
             <React.Fragment>
-                <div className="py-5">
                 <TitleWrapper>
+                <div className="py-5">
                     <div className="container">
                         <div className="logo">Asian Beauty Center</div>
                         <div className="row">
@@ -29,8 +28,8 @@ export default class ProductList extends Component {
                             </ProductConsumer>
                         </div>
                     </div>
-                    </TitleWrapper>
                 </div>
+                    </TitleWrapper>
             </React.Fragment>
             // <Product />
         )
