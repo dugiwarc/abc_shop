@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Product from './Product';
 import Title from './Title';
+import styled from 'styled-components';
+
 // import {storeProducts} from '../data';
 import {ProductConsumer} from '../context';
 
@@ -14,8 +16,9 @@ export default class ProductList extends Component {
         return (
             <React.Fragment>
                 <div className="py-5">
+                <TitleWrapper>
                     <div className="container">
-                        <Title name="our" title="products" />
+                        <div className="logo">Asian Beauty Center</div>
                         <div className="row">
                             <ProductConsumer>
                                 {value=>{
@@ -26,6 +29,7 @@ export default class ProductList extends Component {
                             </ProductConsumer>
                         </div>
                     </div>
+                    </TitleWrapper>
                 </div>
             </React.Fragment>
             // <Product />
@@ -33,3 +37,11 @@ export default class ProductList extends Component {
     }
 }
 
+const TitleWrapper = styled.nav`
+.logo {
+    font-size:3rem;
+    color: var(--mainDark) !important;
+    text-align: center;
+    font-family: 'Jacques Francois', serif;
+}
+`

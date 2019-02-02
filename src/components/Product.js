@@ -37,7 +37,6 @@ export default class Product extends Component {
               </h5>
           </div>
         </div>
-        <h3>Hello from product</h3>
       </ProductWrapper>
     )
   }
@@ -85,6 +84,7 @@ const ProductWrapper = styled.div`
   }
   .card-img-top
   {
+    max-height: 150px;
     transition: all 1s linear;
   }
   .img-container:hover .card-img-top

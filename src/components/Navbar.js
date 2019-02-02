@@ -15,12 +15,15 @@ export default class Navbar extends Component {
                     https://www.iconfinder.com/Makoto_msk */
                 }
                 <Link to='/'>
-                    <img src={logo} alt="store" className="navbar-brand" />
+                    {/* <img src={logo} alt="store" className="navbar-brand" /> */}
+                    <div className="logo">Asian Beauty Center</div>
                 </Link>
                 <ul className="navbar-nav align-items-center">
                     <li className="nav-item ml-5">
                         <Link to="/product" className="nav-link">
-                            Products
+                            <div className="logo">
+                                Products
+                            </div>
                         </Link>
                     </li>
                 </ul>
@@ -43,5 +46,9 @@ background: var(--mainBlue);
     color: var(--mainWhite) !important;
     font-size: 1.3rem;
     text-transform: capitalize;
+}
+.logo {
+    font-size:1rem;
+    color: var(--mainWhite) !important;
 }
 `
